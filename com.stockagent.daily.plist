@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.stockagent.daily</string>
+
+    <!-- 用 stock-agent 虚拟环境里的 python 运行脚本 -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/macmini/stock-agent/venv/bin/python3</string>
+        <string>/Users/macmini/stock-agent/stock_agent.py</string>
+    </array>
+
+    <!-- 每天 17:10（美股收盘后，多伦多时间）运行；想改时间就改 Hour/Minute -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>17</integer>
+        <key>Minute</key>
+        <integer>10</integer>
+    </dict>
+
+    <!-- Mac 睡着错过时间点时，唤醒后会补跑一次 -->
+    <key>StandardOutPath</key>
+    <string>/Users/macmini/stock-agent/launchd_out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/macmini/stock-agent/launchd_err.log</string>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/macmini/stock-agent</string>
+</dict>
+</plist>
