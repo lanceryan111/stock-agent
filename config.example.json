@@ -1,0 +1,27 @@
+{
+  "tickers": {
+    "科技巨头": [
+      "AAPL",
+      "MSFT",
+      "GOOGL"
+    ],
+    "赌博": [
+      "FBTC",
+      "ARKK"
+    ],
+    "芯片": [
+      "NVDA",
+      "AMD",
+      "DRAM"
+    ],
+    "电动车": [
+      "TSLA"
+    ]
+  },
+  "model": "qwen3.6:35b-a3b",
+  "ollama_url": "http://localhost:11434",
+  "gmail_address": "your@gmail.com",
+  "gmail_app_password": "在这里填入16位应用专用密码",
+  "email_to": "your@gmail.com",
+  "cost_pct": 0.05
+}

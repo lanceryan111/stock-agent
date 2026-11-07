@@ -9,8 +9,8 @@
     <!-- 用 stock-agent 虚拟环境里的 python 运行脚本 -->
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/macmini/stock-agent/venv/bin/python3</string>
-        <string>/Users/macmini/stock-agent/stock_agent.py</string>
+        <string>/Users/macmini/repo/stock-agent/venv/bin/python3</string>
+        <string>/Users/macmini/repo/stock-agent/stock_agent.py</string>
     </array>
 
     <!-- 每天 17:10（美股收盘后，多伦多时间）运行；想改时间就改 Hour/Minute -->
@@ -24,11 +24,11 @@
 
     <!-- Mac 睡着错过时间点时，唤醒后会补跑一次 -->
     <key>StandardOutPath</key>
-    <string>/Users/macmini/stock-agent/launchd_out.log</string>
+    <string>/Users/macmini/repo/stock-agent/launchd_out.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/macmini/stock-agent/launchd_err.log</string>
+    <string>/Users/macmini/repo/stock-agent/launchd_err.log</string>
 
     <key>WorkingDirectory</key>
-    <string>/Users/macmini/stock-agent</string>
+    <string>/Users/macmini/repo/stock-agent</string>
 </dict>
 </plist>

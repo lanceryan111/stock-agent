@@ -1,0 +1,12 @@
+# 含密码，不能提交
+config.json
+# 运行时数据与日志
+history.json
+feedback.json
+scoreboard.md
+lessons.md
+lessons.archive.md
+*.log
+venv/
+__pycache__/
+_to_delete/
